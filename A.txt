@@ -1,1 +1,44 @@
- 
+ 按键精灵常用命令
+    http://zy.anjian.com/?action-model-name-qmdn-itemid-248
+
+    1)  TracePrint 调试输出     Dim 消息  消息= "大神思维不一样！" TracePrint 消息
+    2)  // 脚本注释         //这是定义变量    Dim 循环当前次数
+    3)  MessageBox 弹出对话框
+    4)  ExitScript 脚本退出运行
+    5)  Dim 定义变量  Dim 手机号码  手机号码= "18741638358"
+    6)  字符串连接   TracePrint  "手机号码" & 手机号码
+    7)  If 如果..则
+    If 手机号码 = "1874156757" Then
+        MessageBox "OK!"
+    ElseIf 手机号码="121432454" Then
+        MessageBox "Error!"
+    Else
+         MessageBox "输入的其他号码 " & 手机号码   //容错
+    End If
+    8)  For 循环
+        For 当前循环的次数= 1 To 10
+            TracePrint "当前循环的次数" & 当前循环的次数
+        Next
+    9)  Select 情况条件选择
+            Dim 成绩
+        Select Case 成绩/10
+            Case 10
+                TracePrint "A"
+            Case 9
+                TracePrint "B"
+            Case 8
+                TracePrint "C"
+            Case Else
+                TracePrint "其他情况 " & 成绩/10
+        End Select
+    10) 字符串函数
+            1、去字符串的ASCII  把ASCII转成字符串
+            2、把字符串转成十六进制
+            3、去文本左边(右边)指定位数 left(string, n)
+            4、去字符串长度len(string)
+            5、去从指定位置字符串取指定位数mid(string, start, n)
+            6、
+
+
+
+
